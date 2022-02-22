@@ -10,9 +10,8 @@ export default class Command extends BaseCommand {
     super(client, handler, {
       command: "info",
       description: "Will display the info of the bot",
-      category: "dev",
+      category: "general",
       usage: `${client.config.prefix}info`,
-      modsOnly: true,
       baseXp: 0,
     });
   }
@@ -35,7 +34,7 @@ export default class Command extends BaseCommand {
     };
     const uptime = () => formatTime(process.uptime());
     await M.reply(
-      `*━━━❰ 🚀CR-BOT🚀 ❱━━━*\n\n 🔮 *Groups: ${
+      `*━━━❰ 🚀DREADED-BOT🚀 ❱━━━*\n\n 🔮 *Groups: ${
         chats.length
       }*/69\n\n🟩 *Users: ${users}*\n\n🚦 *Uptime: ${uptime()}*`
     );
