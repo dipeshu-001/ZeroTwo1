@@ -27,7 +27,7 @@ export default class EventHandler {
           { $set: { bot: this.client.user.name } }
         );
       }
-      const text = `Thanks for adding me. Please tap at one of the buttons to get started.`;
+      const text = `Thanks for adding me to your group. Please type *${this.client.config.prefix}help* or tap any button to get me started.`;
       const buttons = [
         {
           buttonId: "help",
@@ -53,7 +53,7 @@ export default class EventHandler {
       }
       const buttonMessage: any = {
         contentText: `${text}`,
-        footerText: "🎇 Beyond 🎇",
+        footerText: "💎 Dreaded 💎",
         buttons: buttons,
         headerType: 1,
       };
@@ -92,8 +92,8 @@ export default class EventHandler {
 			: event.action === "remove"
 			? `Goodbye *@${
 					event.participants[0].split("@")[0]
-			  }* 👋🏻, we're probably not gonna miss you.`
-			: `Ara Ara looks like *@${
+			  }* 👋🏻, we're probably not gonna miss you anymore.`
+			: `Wooah, looks like *@${
 					event.participants[0].split("@")[0]
 			  }* got ${this.client.util.capitalize(event.action)}d${
 					event.actor ? ` by *@${event.actor.split("@")[0]}*` : ""
@@ -149,7 +149,7 @@ export default class EventHandler {
         .setColor("title", "#FF0000")
         .setColor("avatar", "#FF0000")
         .setText("member-count", `- ${memberCount} member !`)
-        .setText("message", `we're probably not gonna miss you`)
+        .setText("message", `we're probably not gonna miss you anymore`)
         .setBackground(
           "https://images.unsplash.com/photo-1554050857-c84a8abdb5e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
         )
@@ -161,7 +161,7 @@ export default class EventHandler {
         {
           caption: `Goodbye *@${
             event.participants[0].split("@")[0]
-          }* 👋🏻, we're probably not gonna miss you.`,
+          }* 👋🏻, we're probably not gonna miss you anymore.`,
           contextInfo,
         }
       ));
@@ -178,7 +178,7 @@ export default class EventHandler {
       );
     }
     if (demote) {
-      const text = `Ara Ara looks like *@${
+      const text = `Wooah, looks like *@${
         event.participants[0].split("@")[0]
       }* got demoted.`;
       return void this.client.sendMessage(
