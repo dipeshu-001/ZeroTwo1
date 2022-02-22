@@ -19,16 +19,16 @@ export default class Command extends BaseCommand {
   run = async (M: ISimplifiedMessage): Promise<void> => {
     await this.client.sendMessage(
       M.sender.jid,
-      ` _*I'M FROM 𝕋ℍ𝔼 𝔻𝔸ℝ𝕂 🚀*\n\n
-        _*CR-BOT NEWS*_:https://chat.whatsapp.com/\n\n 
-        _*WELCOME TO THE DARK*_:https://chat.whatsapp.com/\n\n
-        _*CR-BOT CASINO*_:https://chat.whatsapp.com/\n\n 
-        _*CR-BOT NSFW*_:https://chat.whatsapp.com/
-        _*CR-BOT QUIZ*_:https://chat.whatsapp.com/`,
+      ` _*WELL, THAT BEING THE CASE THEN, 🚀*\n\n
+        _*DREADED-BOT NEWS*_:https://Pending/\n\n 
+        _*WELCOME TO THE DARK*_:Pending/\n\n
+        _*DREADED-BOT CASINO AND QUIZ*_:Pending/\n\n 
+        _*DREADED-BOT NSFW*_:Pending.../
+        _*WELCOME AND FOLLOW RULES*_/`,
 
       MessageType.text
     );
 
-    return void M.reply("Sent you the Group Link in personal message");
+    return void M.reply("Sent you the Group Links in personal message");
   };
 }
