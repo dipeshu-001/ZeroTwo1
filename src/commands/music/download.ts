@@ -23,7 +23,7 @@ export default class Command extends BaseCommand {
     { joined }: IParsedArgs
   ): Promise<void> => {
     if (!joined)
-      return void M.reply("Please provide me a search term.. onegai");
+      return void M.reply("Please provide me a search term.. ");
     const term = joined.trim();
     const { videos } = await yts(term);
     if (!videos || videos.length <= 0)
@@ -32,14 +32,14 @@ export default class Command extends BaseCommand {
       );
     const audio = new YT(videos[0].url, "audio");
     if (!audio.url) return;
-    M.reply("🎆downloading");
+    M.reply("🎧 downloading");
     this.client
       .sendMessage(M.from, await audio.getBuffer(), MessageType.audio, {
         quoted: M.WAMessage,
         contextInfo: {
           externalAdReply: {
             title: videos[0].title.substr(0, 30),
-            body: `author : ${videos[0].author.name.substr(0, 20)}\n🚀CR-BOT🚀`,
+            body: `author : ${videos[0].author.name.substr(0, 20)}\n🚀DREADED-BOT🚀`,
             mediaType: 2,
             thumbnailUrl: `https://i.ytimg.com/vi/${audio.id}/hqdefault.jpg`,
             mediaUrl: audio.url,
