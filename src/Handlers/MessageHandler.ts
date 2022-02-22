@@ -284,7 +284,7 @@ export default class MessageHandler {
       ];
       const buttonMessage: any = {
         contentText: `*A claimable character Appeared!*\n\n🎀 *Name: ${chara.name}*\n\n💬 *About:* ${chara.about}\n\n📛 *Source: ${source[0].anime.title}*\n\n💰 *Price: ${price}*\n\n*[Use ${this.client.config.prefix}claim to have this character in your gallery]*`,
-        footerText: "🎇 Beyond 🎇",
+        footerText: "💎 Dreaded 💎",
         buttons: buttons,
         headerType: 4,
         imageMessage: media?.message?.imageMessage,
@@ -304,7 +304,7 @@ export default class MessageHandler {
   };
 
   handleState = async (): Promise<void> => {
-    const text = `💎 Connected to web server..💎 (Online)`;
+    const text = `💎 Reconnected to web server.. 🚀 (Online)`;
     await this.client.sendMessage(
       "120363037700352694@g.us",
       text,
@@ -313,7 +313,7 @@ export default class MessageHandler {
   };
 
   sendReconnectMessage = async (): Promise<void> => {
-    const text = `Reconnected... 💎`;
+    const text = `Reconnected... 🚀`;
     await this.client.sendMessage(
       "120363037700352694@g.us",
       text,
