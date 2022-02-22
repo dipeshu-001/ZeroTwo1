@@ -48,7 +48,7 @@ export default class Command extends BaseCommand {
 
         if (!audio.url) return
 
-        M.reply('🌟 Sending...')
+        M.reply('🎶 Sending...')
 
         this.client
 
@@ -62,7 +62,7 @@ export default class Command extends BaseCommand {
 
                         title: videos[0].title.substr(0, 30),
 
-                        body: `author : ${videos[0].author.name.substr(0, 20)}\n𝟡𝟡𝟡𝐛𝐨𝐭𝐭𝐨`,
+                        body: `author : ${videos[0].author.name.substr(0, 20)}\nDreadedbot`,
 
                         mediaType: 2,
 
