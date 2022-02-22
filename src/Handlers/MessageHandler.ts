@@ -146,7 +146,7 @@ export default class MessageHandler {
       return void null;
     if (!command)
       return void M.reply(
-        `No such command, use *${this.client.config.prefix}help* to see commandlist.`
+        `No such command, use *${this.client.config.prefix}help* to view the command list.`
       );
     const user = await this.client.getUser(M.sender.jid);
     if (user.ban) return void M.reply("You're Banned from using commands.");
@@ -169,7 +169,7 @@ export default class MessageHandler {
     }
     if (command.config?.adminOnly && !M.sender.isAdmin)
       return void M.reply(
-        `This command is meant for *GROUP ADMINS*`
+        `This command is meant for *GROUP ADMINS only!*`
       );
     try {
       await command.run(M, this.parseArgs(args));
@@ -304,7 +304,7 @@ export default class MessageHandler {
   };
 
   handleState = async (): Promise<void> => {
-    const text = `💎 Reconnected to web server.. 🚀 (Online)`;
+    const text = `Dreaded Reconnected to web server....🚀 `;
     await this.client.sendMessage(
       "120363037700352694@g.us",
       text,
