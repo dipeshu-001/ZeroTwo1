@@ -80,7 +80,7 @@ export default class Command extends BaseCommand {
     )}*\n\n🔮 *For: ${this.client.util.capitalize(i)}*`;
     const buttonMessage: any = {
       contentText: `${text}`,
-      footerText: "🚀CR-BOT🚀",
+      footerText: "🚀DREADED-BOT🚀",
       buttons: buttons,
       headerType: 1,
     };
