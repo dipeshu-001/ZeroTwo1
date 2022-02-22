@@ -146,7 +146,7 @@ export default class MessageHandler {
       return void null;
     if (!command)
       return void M.reply(
-        `No such command, Baka! Have you never seen someone use the command *${this.client.config.prefix}help*.`
+        `No such command, use *${this.client.config.prefix}help* to see commandlist.`
       );
     const user = await this.client.getUser(M.sender.jid);
     if (user.ban) return void M.reply("You're Banned from using commands.");
@@ -165,11 +165,11 @@ export default class MessageHandler {
       command.config?.modsOnly &&
       !this.client.config.mods?.includes(M.sender.jid)
     ) {
-      return void M.reply(`Only MODS are allowed to use this command.`);
+      return void M.reply(`Only *OWNERS* are allowed to use this command.`);
     }
     if (command.config?.adminOnly && !M.sender.isAdmin)
       return void M.reply(
-        `This command is only meant for the group admins, Baka!`
+        `This command is meant for *GROUP ADMINS*`
       );
     try {
       await command.run(M, this.parseArgs(args));
@@ -304,7 +304,7 @@ export default class MessageHandler {
   };
 
   handleState = async (): Promise<void> => {
-    const text = `🎇BACK TO BUSINESS!!🎇 (t-ehe)`;
+    const text = `💎 Connected to web server..💎 (Online)`;
     await this.client.sendMessage(
       "120363037700352694@g.us",
       text,
@@ -313,7 +313,7 @@ export default class MessageHandler {
   };
 
   sendReconnectMessage = async (): Promise<void> => {
-    const text = `I'm back, Darling !! 💖w💖`;
+    const text = `Reconnected... 💎`;
     await this.client.sendMessage(
       "120363037700352694@g.us",
       text,
