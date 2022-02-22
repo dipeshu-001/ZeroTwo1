@@ -67,7 +67,7 @@ export default class Command extends BaseCommand {
     const text = `Character trade started\n\nOffer: ${gallery[i].name} (From ${gallery[i].source})\n\nFor: ${chara.name} (From ${source[0].anime.title})`;
     const buttonMessage: any = {
       contentText: `${text}`,
-      footerText: "🎇 Beyond 🎇",
+      footerText: "🚀CR-BOT🚀",
       buttons: buttons,
       headerType: 1,
     };
