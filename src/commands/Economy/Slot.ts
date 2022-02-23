@@ -90,7 +90,7 @@ export default class Command extends BaseCommand {
     const head = `🎰 *SLOT MACHINE* 🎰`;
     const buttons = [
       {
-        buttonId: ".wallet",
+        buttonId: `${this.client.config.prefix}wallet`,
         buttonText: { displayText: `${this.client.config.prefix}wallet` },
         type: 1,
       },
