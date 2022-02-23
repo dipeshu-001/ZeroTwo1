@@ -19,16 +19,11 @@ export default class Command extends BaseCommand {
   run = async (M: ISimplifiedMessage): Promise<void> => {
     await this.client.sendMessage(
       M.sender.jid,
-      ` _*WELL, THAT BEING THE CASE THEN, 🚀*\n\n
-        _*DREADED-BOT NEWS*_:https://Pending/\n\n 
-        _*WELCOME TO THE DARK*_:Pending/\n\n
-        _*DREADED-BOT CASINO AND QUIZ*_:Pending/\n\n 
-        _*DREADED-BOT NSFW*_:Pending.../
-        _*WELCOME AND FOLLOW RULES*_/`,
+      ` _*💎   WELL, IF THAT WAS THE CASE THEN  💎*_\n _*DREADED SUPPORT GROUP*_:    https://chat.whatsapp.com/FNySjhEFYBqAjJtQiPzPIb`,
 
       MessageType.text
     );
 
-    return void M.reply("Sent you the Group Links in personal message");
+    return void M.reply("Sent you a personal message regarding this.");
   };
 }
