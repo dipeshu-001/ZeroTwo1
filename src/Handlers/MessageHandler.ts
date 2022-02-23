@@ -165,11 +165,11 @@ export default class MessageHandler {
       command.config?.modsOnly &&
       !this.client.config.mods?.includes(M.sender.jid)
     ) {
-      return void M.reply(`Only *OWNERS* are allowed to use this command.`);
+      return void M.reply(`Only *OWNERS & MODS* are allowed to use this command.`);
     }
     if (command.config?.adminOnly && !M.sender.isAdmin)
       return void M.reply(
-        `This command is meant for *GROUP ADMINS only!*`
+        `This command is meant for *GROUP ADMINS* only!`
       );
     try {
       await command.run(M, this.parseArgs(args));
