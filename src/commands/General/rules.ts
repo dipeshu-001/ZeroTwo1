@@ -64,7 +64,7 @@ export default class Command extends BaseCommand {
 
 🚀 _Enjoy the bot and have fun as you can._\n\n`,
 
-      footerText: "🚀DREADED-BOT🚀",
+      footerText: "©zero two 2022",
 
       buttons: buttons,
 
