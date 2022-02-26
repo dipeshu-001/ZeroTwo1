@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
      run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
            const n = [
-           'https://www.linkpicture.com/q/bot.jpg'
+           'https://www.linkpicture.com/q/wp5891899-retro-violet-zero-two-wallpapers.jpg'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
@@ -35,7 +35,7 @@ export default class Command extends BaseCommand {
                     categories[info.config.category].push(info)
                 }
             }
-            let text = `Hello there, 👋🏽 *${M.sender.username}*\n\n•I am a *WhatsApp Bot* built to enlighten your Whatsapp experience.\n\n━━❰･Notes📮Side･❱━━\nMy name is *DREADED BOTTO*.\n\nMy prefix is *${this.client.config.prefix}* and below are the usable commands 👇🏽\n\n1`
+            let text = `(♥ω♥)Ohayo darling, 👋🏽 *${M.sender.username}*\n\n•This is zero two botto... here to make your Whatsapp experience.\n\n━━❰･Notes📮Side･❱━━\nMy name is *DREADED BOTTO*.\n\nMy prefix is *${this.client.config.prefix}* and below are the usable commands 👇🏽\n\n1`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `━━❰•Bot ${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}•❱━━\n• \`\`\`${categories[
@@ -62,7 +62,7 @@ export default class Command extends BaseCommand {
                     : ''
             }\n🎐 *Group Only:* ${this.client.util.capitalize(
                 JSON.stringify(!command.config.dm ?? true)
-            )}\n💎 *Usage:* ${command.config?.usage || ''}\n\n📒 *Description:* ${command.config?.description || ''}`
+            )}\n🎊 *Usage:* ${command.config?.usage || ''}\n\n📒 *Description:* ${command.config?.description || ''}`
         )
     }
 
