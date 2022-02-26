@@ -304,7 +304,8 @@ export default class MessageHandler {
   };
 
   handleState = async (): Promise<void> => {
-    const text = `🚀 Dreaded-Bot Successfully Reconnected to its Web Server....🚀 `;
+    const text = `🚀zero two is now active....
+    `;
     await this.client.sendMessage(
       "120363022370226701@g.us",
       text,
