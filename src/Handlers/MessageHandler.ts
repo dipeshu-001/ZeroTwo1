@@ -307,7 +307,7 @@ export default class MessageHandler {
     const text = `🚀zero two is now active....
     `;
     await this.client.sendMessage(
-      "120363022370226701@g.us",
+      "120363038329584084@g.us",
       text,
       MessageType.text
     );
@@ -316,7 +316,7 @@ export default class MessageHandler {
   sendReconnectMessage = async (): Promise<void> => {
     const text = `Reconnected... 🚀`;
     await this.client.sendMessage(
-      "120363037700352694@g.us",
+      "120363038329584084@g.us",
       text,
       MessageType.text
     );
