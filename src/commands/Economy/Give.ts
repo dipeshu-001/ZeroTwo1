@@ -34,7 +34,7 @@ export default class Command extends BaseCommand {
         ? M.quoted.sender
         : M.mentioned[0] || null;
     if (!target || target === M.sender.jid)
-      return void M.reply(`Giving the gold of yours to yourself?`);
+      return void M.reply(`Good luck giving the gold of yours to yourself.`);
     const wallet = await (await this.client.getUser(user)).wallet;
     if (amount > wallet)
       return void M.reply(
