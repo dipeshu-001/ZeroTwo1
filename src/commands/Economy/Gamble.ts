@@ -113,7 +113,7 @@ export default class Command extends BaseCommand {
       });
       await M.reply(await sticker.build(), MessageType.sticker, Mimetype.webp);
       const buttonMessage: any = {
-        contentText: `📈 You won *${amount} gold*.`,
+        contentText: `✨🎊🎊You won *${amount} gold*.`,
         footerText: "levi",
         buttons: buttons,
         headerType: 1,
