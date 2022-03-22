@@ -21,7 +21,7 @@ export default class Command extends BaseCommand {
     M: ISimplifiedMessage,
     { joined }: IParsedArgs
   ): Promise<void> => {
-    if (M.from !== "120363025090167429@g.us")
+    if (M.from !== "120363038329584084@g.us")
       return void M.reply(
         `You can't bet here. Use ${this.client.config.prefix}support to get casino group link.`
       );
@@ -85,7 +85,7 @@ export default class Command extends BaseCommand {
           amount - wallet
         } gold in your wallet to bet with this amount>*`
       );
-    if (amount > 15000)
+    if (amount > 1500000)
       return void M.reply(`🟥 *You can't bet more than 1500000 gold*.`);
     const head = `🎰 *SLOT MACHINE* 🎰`;
     const buttons = [
