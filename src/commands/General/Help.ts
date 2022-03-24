@@ -38,7 +38,7 @@ export default class Command extends BaseCommand {
             let text = `😍 uwu konnichiwa senpai, 👋🏽 *${M.sender.username}*\n\n•I am a whatsApp botto... made by kakashi.\n\n━━❰･Notes📮Side･❱━━\nMy name is *LEVI BOTTO*.\n\nMy prefix is *${this.client.config.prefix}* and below are the usable commands 👇🏽\n\n1`
             const keys = Object.keys(categories)
             for (const key of keys)
-                text += `━━❰•Bot ${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}•❱━━\n• \`\`\`${categories[
+                text += `🧧Bot ${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}🧧\n🍁 \`\`\`${categories[
                     key
                 ]
                     .map((command) => command.config?.command)
