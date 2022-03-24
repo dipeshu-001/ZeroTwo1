@@ -74,24 +74,6 @@ export default class Command extends BaseCommand {
         { title: "trivia", rowId: "rowid2" },
         { title: "urbandictionary", rowId: "rowid2" },
       ];
-      const extra = [
-        { title: "3dchrome", rowId: "rowid1" },
-        { title: "3dt", rowId: "rowid2" },
-        { title: "berry", rowId: "rowid2" },
-        { title: "blood", rowId: "rowid2" },
-        { title: "bokeh", rowId: "rowid2" },
-        { title: "bp", rowId: "rowid2" },
-        { title: "chocolate", rowId: "rowid2" },
-        { title: "cloud", rowId: "rowid2" },
-        { title: "devil", rowId: "rowid2" },
-        { title: "glitch", rowId: "rowid2" },
-        { title: "harrypotter", rowId: "rowid2" },
-        { title: "holographic", rowId: "rowid2" },
-        { title: "horror", rowId: "rowid2" },
-        { title: "loveneon", rowId: "rowid2" },
-        { title: "lovewall", rowId: "rowid2" },
-        { title: "luxury", rowId: "rowid2" },
-      ];
       const fun = [
         { title: "rip", rowId: "rowid1" },
         { title: "fact", rowId: "rowid2" },
