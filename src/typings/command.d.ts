@@ -30,6 +30,7 @@ export type TCategory =
   | "fun"
   | "games"
   | "educative"
+  | "extra" 
   | "general"
   | "media"
   | "moderation"
