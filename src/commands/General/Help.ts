@@ -98,7 +98,6 @@ export default class Command extends BaseCommand {
         { title: "help", rowId: "rowid2" },
         { title: "support", rowId: "rowid2" },
         { title: "hi", rowId: "rowid2" },
-        { title: "hg", rowId: "rowid2" },
         { title: "invitelink", rowId: "rowid2" },
         { title: "mods", rowId: "rowid2" },
         { title: "profile", rowId: "rowid2" },
