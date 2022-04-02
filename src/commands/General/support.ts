@@ -20,7 +20,7 @@ export default class Command extends BaseCommand {
     await this.client.sendMessage(
       M.sender.jid,
       ` _*✨WELL, IF THAT WAS THE CASE THEN  ✨*_\n _*LEVI SUPPORT GROUP*_:  https://chat.whatsapp.com/EQVwc08goNlLtSivsfmpUT   
-*LEVI CASINO🎰🃏* https://chat.whatsapp.com/Jpcy4wLVdcI2eacrrEqcSD`,
+*LEVI CASINO🎰🃏* https://chat.whatsapp.com/F9agTkgYfVXKx0bwIyUmVv`,
 
       MessageType.text
     );
