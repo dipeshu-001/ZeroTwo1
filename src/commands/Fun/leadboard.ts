@@ -28,7 +28,7 @@ export default class Command extends BaseCommand {
     //   M.reply(JSON.stringify(lb));
 
     // M.reply('total user heuhue :'+indexes.toString())
-    const message = ["_*DREADED*_ :" + indexes.toString() + ""];
+    const message = ["_*ZeroTwo*_ :" + indexes.toString() + ""];
     const mention = [];
     let i = 0;
     for (const users of lb) {
