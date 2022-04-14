@@ -11,7 +11,7 @@
 
 > A Fully Modular and Efficient Whatsapp Bot <br>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/Toshiro223/projectlevi/blob/main)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/Toshiro223/ZeroTwo/blob/main)
 
 </div><br/>
 
