@@ -104,7 +104,7 @@ export default class Command extends BaseCommand {
       const text = `${head}\n\n${i}\n\n📉 You lost *${amount} gold*.`;
       const buttonMessage: any = {
         contentText: `${text}`,
-        footerText: "©zero two 2022",
+        footerText: "ZeroTwo 2022",
         buttons: buttons,
         headerType: 1,
       };
@@ -121,7 +121,7 @@ export default class Command extends BaseCommand {
       const text = `${head}\n\n${o}\n\n🎊✨ You won *${gold} gold*.`;
       const buttonMessage: any = {
         contentText: `${text}`,
-        footerText: "©levi 2022",
+        footerText: "ZeroTwo 2022",
         buttons: buttons,
         headerType: 1,
       };
@@ -137,7 +137,7 @@ export default class Command extends BaseCommand {
       const text = `${head}\n\n${p}\n\n🎊 *Jackpot!* You won *${gold} gold*.`;
       const buttonMessage: any = {
         contentText: `${text}`,
-        footerText: "©levi 2022",
+        footerText: "ZeroTwo 2022",
         buttons: buttons,
         headerType: 1,
       };
