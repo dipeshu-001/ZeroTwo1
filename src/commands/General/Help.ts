@@ -35,10 +35,10 @@ export default class Command extends BaseCommand {
                     categories[info.config.category].push(info)
                 }
             }
-            let text = `😍 uwu konnichiwa senpai, 👋🏽 *${M.sender.username}*\n\n•I am a whatsApp botto... made by kakashi.\n\n━━❰･Notes📮Side･❱━━\nMy name is *LEVI BOTTO*.\n\nMy prefix is *${this.client.config.prefix}* and below are the usable commands 👇🏽\n\n1`
+            let text = `😍 uwu konnichiwa senpai, 👋🏽 *${M.sender.username}*\n\n\n\n━━❰･Notes📮Side･❱━━\nMy name is *ℤ𝕖𝕣𝕠𝕋𝕨𝕠*.\n\nMy prefix is *${this.client.config.prefix}* 𝐀𝐧𝐝 𝐌𝐲 𝐔𝐬𝐚𝐛𝐞𝐥𝐞 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐀𝐫𝐞 𝐋𝐢𝐬𝐭𝐞𝐝 𝐁𝐞𝐥𝐨𝐰\n\n1`
             const keys = Object.keys(categories)
             for (const key of keys)
-                text += `🧧Bot ${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}🧧\n🍁 \`\`\`${categories[
+                text += `━━━━❰ ${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)} ❱━━━━\n \`\`\`${categories[
                     key
                 ]
                     .map((command) => command.config?.command)
