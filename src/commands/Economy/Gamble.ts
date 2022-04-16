@@ -33,7 +33,7 @@ export default class Command extends BaseCommand {
     if (time - (Date.now() - cd) > 0) {
       const timeLeft = ms(time - (Date.now() - cd));
       return void M.reply(
-        `Woahh! Slow down, you can gamble again in *${timeLeft.seconds} second(s)*`
+        `Woahh! Slow down, you can gamble again in *${timeLeft.seconds} 🕑 second(s)*`
       );
     }
     const directions = ["left", "right"];
@@ -91,7 +91,7 @@ export default class Command extends BaseCommand {
       await M.reply(await sticker.build(), MessageType.sticker, Mimetype.webp);
       const buttonMessage: any = {
         contentText: `📉 You lost *${amount} gold*.`,
-        footerText: "levi",
+        footerText: "ZeroTwo",
         buttons: buttons,
         headerType: 1,
       };
@@ -114,7 +114,7 @@ export default class Command extends BaseCommand {
       await M.reply(await sticker.build(), MessageType.sticker, Mimetype.webp);
       const buttonMessage: any = {
         contentText: `📈 You won *${amount} gold*.`,
-        footerText: "levi",
+        footerText: "ZeroTwo",
         buttons: buttons,
         headerType: 1,
       };
