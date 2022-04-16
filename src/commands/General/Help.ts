@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
      run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
            const n = [
-           'https://www.linkpicture.com/q/3538991.png'
+           'https://telegra.ph/file/90c8d596818e948cc6a82.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
@@ -35,7 +35,7 @@ export default class Command extends BaseCommand {
                     categories[info.config.category].push(info)
                 }
             }
-            let text = `(❤️∀❤️) konnichiwa Darling, 👋🏻 *${M.sender.username}*\n\n\n\nMy name is *ℤ𝕖𝕣𝕠𝕋𝕨𝕠*.\n\nMy prefix is *${this.client.config.prefix}* ✯〘 𝑪𝑶𝑴𝑴𝑨𝑵𝑫 𝑳𝑰𝑺𝑻 〙✯\n\n`
+            let text = `(❤️∀❤️) konnichiwa Darling, 👋🏻 *${M.sender.username}*\n\n\n\nMy name is *ℤ𝕖𝕣𝕠𝕋𝕨𝕠*.\n\n𝐌𝐲 𝐏𝐫𝐞𝐟𝐢𝐱 𝐈𝐬 💡*${this.client.config.prefix}* ✯〘 𝑪𝑶𝑴𝑴𝑨𝑵𝑫 𝑳𝑰𝑺𝑻 〙✯\n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `━━━━❰•${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}•❱━━━━\n \`\`\`${categories[
