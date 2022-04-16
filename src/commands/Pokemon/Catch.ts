@@ -83,7 +83,7 @@ export default class Command extends BaseCommand {
           contentText: `Well done. You caught a level ${Level} ${this.client.util.capitalize(
             Name
           )}.`,
-          footerText: "🚀levi🚀",
+          footerText: "© ZeroTwo 2022",
           buttons: buttons,
           headerType: 1,
         };
@@ -101,7 +101,7 @@ export default class Command extends BaseCommand {
           contentText: `Well done. You caught a level ${Level} ${this.client.util.capitalize(
             Name
           )}. It has been transferred to your pc.`,
-          footerText: "🚀levi🚀",
+          footerText: "©ZeroTwo 2022",
           buttons: buttons,
           headerType: 1,
         };
