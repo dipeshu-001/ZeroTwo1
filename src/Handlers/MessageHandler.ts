@@ -160,16 +160,16 @@ export default class MessageHandler {
         }`
       );
     if (!command.config?.dm && M.chat === "dm")
-      return void M.reply("This command can only be used in groups");
+      return void M.reply("Know your place fool This command can only be used in groups");
     if (
       command.config?.modsOnly &&
       !this.client.config.mods?.includes(M.sender.jid)
     ) {
-      return void M.reply(`Only *OWNERS & MODS* are allowed to use this command.`);
+      return void M.reply(`Only Toshiro & His MODS* are allowed to use this command.`);
     }
     if (command.config?.adminOnly && !M.sender.isAdmin)
       return void M.reply(
-        `This command is meant for *GROUP ADMINS* only!`
+        `Know your place Fool This command is meant for *GROUP ADMINS* only!`
       );
     try {
       await command.run(M, this.parseArgs(args));
@@ -304,7 +304,7 @@ export default class MessageHandler {
   };
 
   handleState = async (): Promise<void> => {
-    const text = `Reconnected! 🚀
+    const text = `Reconnected! ☄️
     `;
     await this.client.sendMessage(
       "120363023021814163@g.us",
