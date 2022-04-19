@@ -1,4 +1,4 @@
-import express, { NextFunction, Request, Response } from "express"
+import express, { NextFunction, Request, Response } from "express";
 import { EventEmitter } from "events";
 import WAClient from "./WAClient";
 import { join } from "path";
