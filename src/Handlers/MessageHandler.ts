@@ -284,7 +284,7 @@ export default class MessageHandler {
       ];
       const buttonMessage: any = {
         contentText: `*A claimable character Appeared!*\n\n🎀 *Name: ${chara.name}*\n\n💬 *About:* ${chara.about}\n\n📛 *Source: ${source[0].anime.title}*\n\n💰 *Price: ${price}*\n\n*[Use ${this.client.config.prefix}claim to have this character in your gallery]*`,
-        footerText: "𝕝𝕖𝕧𝕚",
+        footerText: "©ZeroTwo 2022",
         buttons: buttons,
         headerType: 4,
         imageMessage: media?.message?.imageMessage,
@@ -304,7 +304,7 @@ export default class MessageHandler {
   };
 
   handleState = async (): Promise<void> => {
-    const text = `Reconnected! ☄️
+    const text = `I'm now active! ☄️
     `;
     await this.client.sendMessage(
       "120363023021814163@g.us",
@@ -314,7 +314,7 @@ export default class MessageHandler {
   };
 
   sendReconnectMessage = async (): Promise<void> => {
-    const text = `I'm now active! 🚀`;
+    const text = `Reconnected!☄️`;
     await this.client.sendMessage(
       "120363023021814163@g.us",
       text,
