@@ -174,7 +174,7 @@ export default class WAClient extends Base {
 
   log = (text: string, error?: boolean): void => {
     console.log(
-      chalk[error ? "red" : "green"]("[CHITOGE]"),
+      chalk[error ? "red" : "green"]("[ZEROTWO]"),
       chalk.blue(moment(Date.now() * 1000).format("DD/MM HH:mm:ss")),
       chalk.yellowBright(text)
     );
