@@ -54,7 +54,7 @@ export default class Command extends BaseCommand {
     }
     const buttonMessage: any = {
       contentText: `You might want to check your pc.`,
-      footerText: "🎇 Beyond 🎇",
+      footerText: "🍭ZeroTwo 🍭",
       buttons: buttons,
       headerType: 1,
     };
