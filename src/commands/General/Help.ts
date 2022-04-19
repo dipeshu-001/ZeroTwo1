@@ -35,7 +35,7 @@ export default class Command extends BaseCommand {
                     categories[info.config.category].push(info)
                 }
             }
-            let text = `*(❤️ω❤️) Konnichiwa👋🏻 *${M.sender.username}*\n\n•╚『🅝🅞🅣🅔 🅢🅘🅓🅔』╝\n\n*𝙡'𝙢 ZeroTwo A Bot Created By Toshiro To make your Whatsapp Enjoyable*\n\n━━❰•Note🔰Side･❱━━\n\n𝙍𝙚𝙖𝙙 𝙏𝙝𝙚 𝙍𝙪𝙡𝙚𝙨\nMy Name Is ZeroTwo\n\nMy Prefix Is ${this.client.config.prefix}\n\n1 | *Don't Call* Bots to avoid Blocking.\n\n2 | *Don't Spam* in Groups to avoid Blocking\n\n`
+            let text = `*(❤️ω❤️) Konnichiwa👋🏻 *${M.sender.username}*\n\n━━━━❰•NOTE🧣SIDE•❱━━━━\n\n*𝙡'𝙢 ZeroTwo A Bot Created By Toshiro To make your Whatsapp Enjoyable*\n\n━━❰•Note🔰Side･❱━━\n\n𝙍𝙚𝙖𝙙 𝙏𝙝𝙚 𝙍𝙪𝙡𝙚𝙨\nMy Name Is ZeroTwo\n\nMy Prefix Is ${this.client.config.prefix}\n\n1 | *Don't Call* Bots to avoid Blocking.\n\n2 | *Don't Spam* in Groups to avoid Blocking\n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `━━━━❰•${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}•❱━━━━\n• \`\`\`${categories[
