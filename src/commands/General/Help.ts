@@ -27,6 +27,7 @@ export default class Command extends BaseCommand {
 title: "ZeroTwo🍭 Bot" , 
 body: "𝐙𝐞𝐫𝐨𝐓𝐰𝐨 𝐁𝐨𝐭𝐭𝐨 𝐛𝐲 𝕋𝕠𝕤𝕙𝕚𝕣𝕠", 
 thumbnail: await request.buffer("https://dk2dv4ezy246u.cloudfront.net/widgets/sLUVOcJh5uA_large.jpg") 
+}
             mimetype: Mimetype.gif,
             caption: `
 
