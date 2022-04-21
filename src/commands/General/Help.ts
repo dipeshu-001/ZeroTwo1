@@ -4,6 +4,7 @@ import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
 import { ISimplifiedMessage } from '../../typings'
+import request from "../../lib/request";
 
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
@@ -25,7 +26,7 @@ export default class Command extends BaseCommand {
         return void this.client.sendMessage(M.from, { url: well }, MessageType.video, {quoted:M.WAMessage,contextInfo:{externalAdReply:{
 title: "ZeroTwo🍭 Bot" , 
 body: "ZeroTwo Botto By Toshiro", 
-thumbnail: ""
+thumbnail: await request.getBuffer("https://dk2dv4ezy246u.cloudfront.net/widgets/sLUVOcJh5uA_large.jpg") 
 }
 }
             mimetype: Mimetype.gif,
