@@ -1,10 +1,9 @@
+import { MessageType, Mimetype } from '@adiwajshing/baileys'
+import { join } from 'path'
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
-import { ICommand, IParsedArgs, ISimplifiedMessage } from '../../typings'
-import { MessageType, Mimetype } from '@adiwajshing/baileys'
-import request from '../../lib/request'
-
+import { ISimplifiedMessage } from '../../typings'
 
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
@@ -13,64 +12,111 @@ export default class Command extends BaseCommand {
             description: 'Displays the help menu or shows the info of the command provided',
             category: 'general',
             usage: `${client.config.prefix}help (command_name)`,
-            aliases: ['h','menu']
+            dm: true,
+            aliases: ['h']
         })
     }
 
-     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
-           const n = [
-           'https://telegra.ph/file/90c8d596818e948cc6a82.mp4'
+    run = async (M: ISimplifiedMessage): Promise<void> => {
+        const n = [
+            'https://telegra.ph/file/90c8d596818e948cc6a82.mp4'
         ]
-        let chitoge = n[Math.floor(Math.random() * n.length)]
-        if (!parsedArgs.joined) {
-            const commands = this.handler.commands.keys()
-            const categories: { [key: string]: ICommand[] } = {}
-            for (const command of commands) {
-                const info = this.handler.commands.get(command)
-                if (!command) continue
-                if (!info?.config?.category || info.config.category === 'general') continue
-                if (Object.keys(categories).includes(info.config.category)) categories[info.config.category].push(info)
-                else {
-                    categories[info.config.category] = []
-                    categories[info.config.category].push(info)
-                }
-            }
-            let text = `*(❤️ω❤️) Konnichiwa👋🏻 *${M.sender.username}*\n\n━━━━❰•NOTE🧣SIDE•❱━━━━\n\n*𝙡'𝙢 ZeroTwo A Bot Created By Toshiro To make your Whatsapp Enjoyable*\n\n━━❰•Note🔰Side･❱━━\n\n𝙍𝙚𝙖𝙙 𝙏𝙝𝙚 𝙍𝙪𝙡𝙚𝙨\nMy Name Is ZeroTwo\n\nMy Prefix Is ${this.client.config.prefix}\n\n1 | *Don't Call* Bots to avoid Blocking.\n\n2 | *Don't Spam* in Groups to avoid Blocking\n\n`
-            const keys = Object.keys(categories)
-            for (const key of keys)
-                text += `━━━━❰• ${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)} •❱━━━━\n• \`\`\`${categories[
-                    key
-                ]
-                    .map((command) => command.config?.command)
-                     .join(', ')}\`\`\`\n\n`
-            return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {quoted: M.WAMessage,
+        let well = n[Math.floor(Math.random() * n.length)]
+        return void this.client.sendMessage(M.from, { url: well }, MessageType.video, {quoted:M.WAMessage,contextInfo:{externalAdReply:{
+title: "ZeroTwo🍭 Bot" , 
+body: "ZeroTwo Botto By Toshiro", 
+thumbnail: ""
+}
+}
+            mimetype: Mimetype.gif,
+            caption: `
 
-          mimetype: Mimetype.gif,
+(❤️ω❤️) Konnichiwa👋🏻 *${M.sender.username}* I Am ZeroTwo 🍭
 
+🚀 ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ɪꜱꜱᴜᴇꜱ ᴡɪᴛʜ ᴛʜᴇ ʙᴏᴛ ᴏʀ ᴀɴʏ ᴇʀʀᴏʀ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ʙᴏᴛ ᴏᴡɴᴇʀ. ᴛʏᴘᴇ " ${this.client.config.prefix}ᴏᴡɴᴇʀ " ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ!
 
-            caption: `${text}
-┌────────────┈
-│  ゼロツー❤️
-└────────────┈
-📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
-            )
-        }
-        const key = parsedArgs.joined.toLowerCase()
-        const command = this.handler.commands.get(key) || this.handler.aliases.get(key)
-        if (!command) return void M.reply(`No Command of Alias Found | "${key}"`)
-        const state = await this.client.DB.disabledcommands.findOne({ command: command.config.command })
-        M.reply(
-            `🚀 *Command:* ${this.client.util.capitalize(command.config?.command)}\n📉 *Status:* ${
-                state ? 'Disabled' : 'Available'
-            }\n⛩ *Category:* ${this.client.util.capitalize(command.config?.category || '')}${
-                command.config.aliases
-                    ? `\n♦️ *Aliases:* ${command.config.aliases.map(this.client.util.capitalize).join(', ')}`
-                    : ''
-            }\n🎐 *Group Only:* ${this.client.util.capitalize(
-                JSON.stringify(!command.config.dm ?? true)
-            )}\n💎 *Usage:* ${command.config?.usage || ''}\n\n📒 *Description:* ${command.config?.description || ''}`
+🌟 ᴘʀᴇꜰɪx - ${this.client.config.prefix}
+────────────────
+━━━━❰ 𝐂𝐡𝐚𝐫𝐚𝐜𝐭𝐞𝐫𝐬 ❱━━━━
+
+🎉 Description: This Command will Redirect To Character Menu!
+🏮 Usage: ${this.client.config.prefix}h1
+
+━━━━❰ 𝐂𝐨𝐝𝐢𝐧𝐠 ❱━━━━
+
+🎉 Description: This Command will Redirect To Coding Menu!
+🏮 Usage: ${this.client.config.prefix}h2
+
+━━━━❰ 𝐃𝐞𝐯 ❱━━━━
+
+🎉 Description: This Command will Redirect To Dev Menu!
+🏮 Usage: ${this.client.config.prefix}h3
+
+━━━━❰ 𝐄𝐜𝐨𝐧𝐨𝐦𝐲 ❱━━━━
+
+🎉 Description: This Command will Redirect To Economy Menu!
+🏮 Usage: ${this.client.config.prefix}h4
+
+━━━━❰ 𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐯𝐞 ❱━━━━
+
+🎉 Description: Thia Command will Redirect To Educative Menu!
+🏮 Usage: ${this.client.config.prefix}h5
+
+━━━━❰ 𝐅𝐮𝐧 ❱━━━━
+
+🎉 Description: This Command will Redirect To Fun Menu!
+🏮 Usage: ${this.client.config.prefix}h6
+
+━━━━❰ 𝐆𝐚𝐦𝐞𝐬 ❱━━━━
+
+🎉 Description: This Command will Redirect To Games Menu!
+🏮 Usage:  ${this.client.config.prefix}h7
+
+━━━━❰ 𝐌𝐨𝐝𝐫𝐚𝐭𝐢𝐨𝐧 ❱━━━━
+
+🎉 Description: This Command Will Redirect To Moderation Menu! 
+🏮 Usage: ${this.client.config.prefix}h8
+
+━━━━❰ 𝐍𝐬𝐟𝐰 ❱━━━━
+
+🎉 Description: This Command will Redirect To Nsfw Menu!
+🏮 Usage: ${this.client.config.prefix}h9
+
+━━━━❰ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧 ❱━━━━
+
+🎉 Description: This Command will Redirect To Pokemon Menu!
+🏮 Usage: ${this.client.config.prefix}h10
+
+━━━━❰ 𝐔𝐭𝐢𝐥𝐬 ❱━━━━
+
+🎉 Description: This Command Will Redirect To Utils Menu!
+🏮 Usage: ${this.client.config.prefix}h11
+
+━━━━❰ 𝐖𝐞𝐞𝐛 ❱━━━━
+
+🎉 Description: This Command Will Redirect To Weeb Menu!
+🏮 Usage: ${this.client.config.prefix}h12
+
+━━━━❰ 𝐌𝐮𝐬𝐢𝐜 ❱━━━━
+
+🎉 Description: This Command will Redirect To Music Menu!
+🏮 Usage: ${this.client.config.prefix}h13
+
+━━━━❰ 𝐌𝐞𝐝𝐢𝐚 ❱━━━━
+
+🎉 Description: This Command will Redirect To Media Menu! 
+🏮 Usage: ${this.client.config.prefix}h14
+
+━━━━❰ 𝐘𝐨𝐮𝐓𝐮𝐛𝐞 ❱━━━━
+
+🎉 Description: This Command Will Redirect To YouTube Menu! 
+🏮 Usage: ${this.client.config.prefix}h15
+
+───────────────
+┌────────────┈❀
+│   ゼロツー❤️
+└────────────┈❀
+📒 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
         )
     }
-
-    emojis = ['', '', '','', '', '', '', '', '', '', '', '']
 }
