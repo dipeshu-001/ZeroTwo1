@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
         return void this.client.sendMessage(M.from, { url: well }, MessageType.video, {quoted:M.WAMessage,contextInfo:{externalAdReply:{
 title: "ZeroTwo🍭 Bot" , 
 body: "ZeroTwo Botto By Toshiro", 
-thumbnail: await request.getBuffer("https://dk2dv4ezy246u.cloudfront.net/widgets/sLUVOcJh5uA_large.jpg") 
+thumbnail: await request.buffer("https://dk2dv4ezy246u.cloudfront.net/widgets/sLUVOcJh5uA_large.jpg") 
 }
 }
             mimetype: Mimetype.gif,
