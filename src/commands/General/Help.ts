@@ -25,7 +25,7 @@ export default class Command extends BaseCommand {
         let well = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: well }, MessageType.video, {quoted:M.WAMessage,contextInfo:{externalAdReply:{
 title: "ZeroTwo🍭 Bot" , 
-body: "ZeroTwo Botto By Toshiro", 
+body: "𝐙𝐞𝐫𝐨𝐓𝐰𝐨 𝐁𝐨𝐭𝐭𝐨 𝐛𝐲 𝕋𝕠𝕤𝕙𝕚𝕣𝕠", 
 thumbnail: await request.buffer("https://dk2dv4ezy246u.cloudfront.net/widgets/sLUVOcJh5uA_large.jpg") 
 }
 }
