@@ -4,7 +4,6 @@ import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
 import { ISimplifiedMessage } from '../../typings'
-import request from "../../lib/request";
 
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
@@ -23,15 +22,11 @@ export default class Command extends BaseCommand {
             'https://telegra.ph/file/90c8d596818e948cc6a82.mp4'
         ]
         let well = n[Math.floor(Math.random() * n.length)]
-        return void this.client.sendMessage(M.from, { url: well }, MessageType.video, {quoted:M.WAMessage,contextInfo:{externalAdReply:{
-title: "ZeroTwo🍭 Bot" , 
-body: "𝐙𝐞𝐫𝐨𝐓𝐰𝐨 𝐁𝐨𝐭𝐭𝐨 𝐛𝐲 𝕋𝕠𝕤𝕙𝕚𝕣𝕠", 
-thumbnail: await request.buffer("https://dk2dv4ezy246u.cloudfront.net/widgets/sLUVOcJh5uA_large.jpg") 
-}
+        return void this.client.sendMessage(M.from, { url: well }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
             caption: `
 
-(❤️ω❤️) Konnichiwa👋🏻 *${M.sender.username}* I Am ZeroTwo 🍭
+(❤️ω❤️) Kon'nichiwa watashi wa *${M.sender.username}* I'm ZeroTwo 🍭 desu!
 
 🚀 ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ɪꜱꜱᴜᴇꜱ ᴡɪᴛʜ ᴛʜᴇ ʙᴏᴛ ᴏʀ ᴀɴʏ ᴇʀʀᴏʀ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ʙᴏᴛ ᴏᴡɴᴇʀ. ᴛʏᴘᴇ " ${this.client.config.prefix}ᴏᴡɴᴇʀ " ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ!
 
