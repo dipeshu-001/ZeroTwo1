@@ -27,6 +27,8 @@ export default class Command extends BaseCommand {
             caption: `━━━━❰ 𝐂𝐨𝐝𝐢𝐧𝐠 𝐋𝐢𝐬𝐭 ❱━━━━
 ──────────────
 ⛩️ ${this.client.config.prefix}github
+
+ 🎐 Grate Hours Ahead 🎐
 ──────────────` }
         )
     }
