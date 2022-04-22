@@ -40,6 +40,8 @@ export default class Command extends BaseCommand {
 ⛩️ ${this.client.config.prefix}status
 ⛩️ ${this.client.config.prefix}switch
 ⛩️ ${this.client.config.prefix}unban
+
+ 🎐 Grate Hours Ahead 🎐
 ──────────────` }
         )
     }
