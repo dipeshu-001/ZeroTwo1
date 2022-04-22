@@ -32,6 +32,8 @@ export default class Command extends BaseCommand {
 ⛩️ ${this.client.config.prefix}tchara-confirm
 ⛩️ ${this.client.config.prefix}tchara-delete
 ⛩️ ${this.client.config.prefix}tchara
+
+ 🎐 Grate Hours Ahead 🎐
 ──────────────` }
         )
     }
