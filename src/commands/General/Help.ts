@@ -32,77 +32,77 @@ export default class Command extends BaseCommand {
 
 🌟 ᴘʀᴇꜰɪx: ${this.client.config.prefix}
 ────────────────
-━━━━❰ 𝐂𝐡𝐚𝐫𝐚𝐜𝐭𝐞𝐫𝐬 ❱━━━━
+━━━━❰🧣𝐂𝐡𝐚𝐫𝐚𝐜𝐭𝐞𝐫𝐬🧣❱━━━━
 
 ⛩️ Description: This Command will Redirect To Character Menu!
 💠 Usage: ${this.client.config.prefix}h1
 
-━━━━❰ 𝐂𝐨𝐝𝐢𝐧𝐠 ❱━━━━
+━━━━❰🧣𝐂𝐨𝐝𝐢𝐧𝐠🧣❱━━━━
 
 ⛩️ Description: This Command will Redirect To Coding Menu!
 💠 Usage: ${this.client.config.prefix}h2
 
-━━━━❰ 𝐃𝐞𝐯 ❱━━━━
+━━━━❰🧣𝐃𝐞𝐯🧣❱━━━━
 
 ⛩️ Description: This Command will Redirect To Dev Menu!
 💠 Usage: ${this.client.config.prefix}h3
 
-━━━━❰ 𝐄𝐜𝐨𝐧𝐨𝐦𝐲 ❱━━━━
+━━━━❰🧣𝐄𝐜𝐨𝐧𝐨𝐦𝐲🧣❱━━━━
 
 ⛩️ Description: This Command will Redirect To Economy Menu!
 💠 Usage: ${this.client.config.prefix}h4
 
-━━━━❰ 𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐯𝐞 ❱━━━━
+━━━━❰🧣𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐯𝐞🧣❱━━━━
 
 ⛩️ Description: Thia Command will Redirect To Educative Menu!
 💠 Usage: ${this.client.config.prefix}h5
 
-━━━━❰ 𝐅𝐮𝐧 ❱━━━━
+━━━━❰🧣𝐅𝐮𝐧🧣❱━━━━
 
 ⛩️ Description: This Command will Redirect To Fun Menu!
 💠 Usage: ${this.client.config.prefix}h6
 
-━━━━❰ 𝐆𝐚𝐦𝐞𝐬 ❱━━━━
+━━━━❰🧣𝐆𝐚𝐦𝐞𝐬🧣❱━━━━
 
 ⛩️ Description: This Command will Redirect To Games Menu!
 💠 Usage:  ${this.client.config.prefix}h7
 
-━━━━❰ 𝐌𝐨𝐝𝐫𝐚𝐭𝐢𝐨𝐧 ❱━━━━
+━━━━❰🧣𝐌𝐨𝐝𝐫𝐚𝐭𝐢𝐨𝐧🧣❱━━━━
 
 ⛩️ Description: This Command Will Redirect To Moderation Menu! 
 💠 Usage: ${this.client.config.prefix}h8
 
-━━━━❰ 𝐍𝐬𝐟𝐰 ❱━━━━
+━━━━❰🧣𝐍𝐬𝐟𝐰🧣❱━━━━
 
 ⛩️ Description: This Command will Redirect To Nsfw Menu!
 💠 Usage: ${this.client.config.prefix}h9
 
-━━━━❰ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧 ❱━━━━
+━━━━❰🧣𝐏𝐨𝐤𝐞𝐦𝐨𝐧🧣❱━━━━
 
 ⛩️ Description: This Command will Redirect To Pokemon Menu!
 💠 Usage: ${this.client.config.prefix}h10
 
-━━━━❰ 𝐔𝐭𝐢𝐥𝐬 ❱━━━━
+━━━━❰🧣𝐔𝐭𝐢𝐥𝐬🧣❱━━━━
 
 ⛩️ Description: This Command Will Redirect To Utils Menu!
 💠 Usage: ${this.client.config.prefix}h11
 
-━━━━❰ 𝐖𝐞𝐞𝐛 ❱━━━━
+━━━━❰🧣𝐖𝐞𝐞𝐛🧣❱━━━━
 
 ⛩️ Description: This Command Will Redirect To Weeb Menu!
 💠 Usage: ${this.client.config.prefix}h12
 
-━━━━❰ 𝐌𝐮𝐬𝐢𝐜 ❱━━━━
+━━━━❰🧣𝐌𝐮𝐬𝐢𝐜🧣❱━━━━
 
 ⛩️ Description: This Command will Redirect To Music Menu!
 💠 Usage: ${this.client.config.prefix}h13
 
-━━━━❰ 𝐌𝐞𝐝𝐢𝐚 ❱━━━━
+━━━━❰🧣𝐌𝐞𝐝𝐢𝐚🧣❱━━━━
 
 ⛩️ Description: This Command will Redirect To Media Menu! 
 💠 Usage: ${this.client.config.prefix}h14
 
-━━━━❰ 𝐘𝐨𝐮𝐓𝐮𝐛𝐞 ❱━━━━
+━━━━❰🧣𝐘𝐨𝐮𝐓𝐮𝐛𝐞🧣❱━━━━
 
 ⛩️ Description: This Command Will Redirect To YouTube Menu! 
 💠 Usage: ${this.client.config.prefix}h15
