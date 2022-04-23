@@ -26,21 +26,22 @@ export default class Command extends BaseCommand {
             mimetype: Mimetype.gif,
             caption: `━━━━❰ 𝐍𝐬𝐟𝐰 𝐋𝐢𝐬𝐭 ❱━━━━
 ──────────────
-🍒 ${this.client.config.prefix}ᴀɴᴀʟ
-🍒 ${this.client.config.prefix}ʙʟᴏᴡᴊᴏʙ
-🍒 ${this.client.config.prefix}ɴꜱꜰᴡᴅᴏᴜᴊɪɴ
-🍒 ${this.client.config.prefix}ɴꜱꜰᴡʟᴏʟɪ
-🍒 ${this.client.config.prefix}ɴꜱꜰᴡᴘᴀᴘᴇʀ
-🍒 ${this.client.config.prefix}ᴛʜɪɢʜꜱ
-🍒 ${this.client.config.prefix}ʜᴇɴᴛᴀɪ
-🍒 ${this.client.config.prefix}ᴍᴀɪᴅ
-🍒 ${this.client.config.prefix}ᴍᴀꜱᴛᴜʀʙᴀᴛɪᴏɴ
-🍒 ${this.client.config.prefix}ɴᴄᴏᴅᴇ
-🍒 ${this.client.config.prefix}ɴꜱꜰᴡ-ᴡᴀɪꜰᴜ
-🍒 ${this.client.config.prefix}ɴꜱꜰᴡᴊᴏᴋᴇ
-🍒 ${this.client.config.prefix}ɴꜱꜰᴡ-ɴᴇᴋᴏ
-🍒 ${this.client.config.prefix}ᴘᴜꜱꜱʏ
-🍒 ${this.client.config.prefix}ᴛʀᴀᴘ
+🍒 ${this.client.config.prefix}anal
+🍒 ${this.client.config.prefix}animepaper
+🍒 ${this.client.config.prefix}blowjob
+🍒 ${this.client.config.prefix}maid
+🍒 ${this.client.config.prefix}masturbation
+🍒 ${this.client.config.prefix}nsfwdoujin
+🍒 ${this.client.config.prefix}nhentai
+🍒 ${this.client.config.prefix}nsfwkitsune
+🍒 ${this.client.config.prefix}nsfwpaper
+🍒 ${this.client.config.prefix}nsfwneko
+🍒 ${this.client.config.prefix}nsfwwaifu
+🍒 ${this.client.config.prefix}pussy
+🍒 ${this.client.config.prefix}thighs
+🍒 ${this.client.config.prefix}seggs
+
+ 🎐 Grate Hours Ahead 🎐
 ──────────────` }
         )
     }
