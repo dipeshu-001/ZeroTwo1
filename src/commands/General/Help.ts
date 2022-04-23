@@ -4,7 +4,7 @@ import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
 import { ISimplifiedMessage } from '../../typings'
-
+import request from '../../request'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
@@ -22,7 +22,10 @@ export default class Command extends BaseCommand {
             'https://telegra.ph/file/90c8d596818e948cc6a82.mp4','https://telegra.ph/file/ff95de880cf258150fe84.mp4','https://telegra.ph/file/3bb24cecc8094ff80e928.mp4'
         ]
         let well = n[Math.floor(Math.random() * n.length)]
-        return void this.client.sendMessage(M.from, { url: well }, MessageType.video, {quoted:M.WAMessage,
+        return void this.client.sendMessage(M.from, { url: well },MessageType.video, {quoted:M.WAMessage,contextInfo:{externalAdReply:{
+        title:"Zero Two",
+        body: "by Toshiro",
+        thumbnail: await request.buffer("https://wallpapers.com/images/high/headshot-of-zero-two-b7y3grje5x45l82b.jpg")}}, 
             mimetype: Mimetype.gif,
             caption: `
 
