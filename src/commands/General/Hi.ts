@@ -27,8 +27,8 @@ export default class Command extends BaseCommand {
     ];
 
     const buttonMessage: any = {
-      contentText: `_*DARLING I M HERE :v*_`,
-      footerText: "©zero two 2022",
+      contentText: `_*DARLING I M HERE*_`,
+      footerText: "©ZeroTwo 2022",
       buttons: buttons,
       headerType: 1,
     };
