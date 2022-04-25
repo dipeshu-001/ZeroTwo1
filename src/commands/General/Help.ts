@@ -31,6 +31,8 @@ export default class Command extends BaseCommand {
 🏮 ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ɪꜱꜱᴜᴇꜱ ᴡɪᴛʜ ᴛʜᴇ ʙᴏᴛ ᴏʀ ᴀɴʏ ᴇʀʀᴏʀ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ʙᴏᴛ ᴏᴡɴᴇʀ. ᴛʏᴘᴇ " ${this.client.config.prefix}ᴏᴡɴᴇʀ " ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ!
 
 ⛩️ ᴘʀᴇꜰɪx: ${this.client.config.prefix}
+
+〘 𝑪𝑶𝑴𝑴𝑨𝑵𝑫 𝑳𝑰𝑺𝑻 〙
 ────────────────
 ━━━━❰🧣𝐂𝐡𝐚𝐫𝐚𝐜𝐭𝐞𝐫𝐬🧣❱━━━━
 🍁 aliases: h1
