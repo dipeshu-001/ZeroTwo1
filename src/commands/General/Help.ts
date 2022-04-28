@@ -32,8 +32,6 @@ export default class Command extends BaseCommand {
 
 ⛩️ ᴘʀᴇꜰɪx: ${this.client.config.prefix}
 
-💠 𝐔𝐬𝐞𝐫 𝐄𝐱𝐩: *${(await this.client.getUser(user)).Xp || 0}*  ` }
-
 〘 𝑪𝑶𝑴𝑴𝑨𝑵𝑫 𝑳𝑰𝑺𝑻 〙
 ────────────────
 ━━━━❰🧣𝐂𝐡𝐚𝐫𝐚𝐜𝐭𝐞𝐫𝐬🧣❱━━━━
