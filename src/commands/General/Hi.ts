@@ -27,8 +27,8 @@ export default class Command extends BaseCommand {
     ];
 
     const buttonMessage: any = {
-      contentText: `_*DARLING I M HERE*_`,
-      footerText: "©ZeroTwo 2022",
+      contentText: `_*HOII DARLING TYPE ${this.client.config.prefix}help OR TAP KN THE THAT HELP BUTTON FOR MY COMMAND LIST (❤️ω❤️)*_`,
+      footerText: "🎐𝐙𝐞𝐫𝐨𝐓𝐰𝐨🎐",
       buttons: buttons,
       headerType: 1,
     };
