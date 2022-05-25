@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         const n = [
-            'https://telegra.ph/file/90c8d596818e948cc6a82.mp4','https://telegra.ph/file/ff95de880cf258150fe84.mp4','https://telegra.ph/file/3bb24cecc8094ff80e928.mp4'
+            'https://telegra.ph/file/90c8d596818e948cc6a82.mp4','https://telegra.ph/file/ff95de880cf258150fe84.mp4','https://telegra.ph/file/3bb24cecc8094ff80e928.mp4','https://telegra.ph/file/c90a9df1b1e5e43ee340b.mp4'
         ]
         let well = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: well }, MessageType.video, {quoted:M.WAMessage,
@@ -28,9 +28,11 @@ export default class Command extends BaseCommand {
 
 (❤️ω❤️) Kon'nichiwa watashi wa *${M.sender.username}* ZeroTwodesu!
 
-🌟 ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ɪꜱꜱᴜᴇꜱ ᴡɪᴛʜ ᴛʜᴇ ʙᴏᴛ ᴏʀ ᴀɴʏ ᴇʀʀᴏʀ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ʙᴏᴛ ᴏᴡɴᴇʀ. ᴛʏᴘᴇ " ${this.client.config.prefix}ᴏᴡɴᴇʀ " ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ!
+🔰 ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ɪꜱꜱᴜᴇꜱ ᴡɪᴛʜ ᴛʜᴇ ʙᴏᴛ ᴏʀ ᴀɴʏ ᴇʀʀᴏʀ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ʙᴏᴛ ᴏᴡɴᴇʀ. ᴛʏᴘᴇ " ${this.client.config.prefix}ᴏᴡɴᴇʀ " ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ!
 
 ⛩️ ᴘʀᴇꜰɪx: ${this.client.config.prefix}
+🎐 ᴅᴇᴠʟᴏᴘᴇʀ: Toshiro
+⚡ Owner: wa.me/+919609900020
 
 〘 𝑪𝑶𝑴𝑴𝑨𝑵𝑫 𝑳𝑰𝑺𝑻 〙
 ────────────────
