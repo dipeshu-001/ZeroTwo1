@@ -26,11 +26,11 @@ export default class Command extends BaseCommand {
             mimetype: Mimetype.gif,
             caption: `
 
-(❤️ω❤️) Kon'nichiwa watashi wa *${M.sender.username}* ZeroTwodesu!
+❤️(> ਊ <)❤️ Kon'nichiwa watashi wa *${M.sender.username}* ZeroTwodesu!
 
 🔰 ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ɪꜱꜱᴜᴇꜱ ᴡɪᴛʜ ᴛʜᴇ ʙᴏᴛ ᴏʀ ᴀɴʏ ᴇʀʀᴏʀ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ʙᴏᴛ ᴏᴡɴᴇʀ. ᴛʏᴘᴇ " ${this.client.config.prefix}ᴏᴡɴᴇʀ " ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ!
 
-⛩️ ᴘʀᴇꜰɪx: ${this.client.config.prefix}
+🧧 ᴘʀᴇꜰɪx: ${this.client.config.prefix}
 🎐 ᴅᴇᴠʟᴏᴘᴇʀ: Toshiro
 ⚡ Owner: wa.me/+919609900020
 
