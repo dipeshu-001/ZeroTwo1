@@ -95,7 +95,7 @@ export default class Command extends BaseCommand {
 ┌────────────┈❀
 │  ゼロツー❤️
 └────────────┈❀
-📒 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`, contextInfo : {externalAdReply : {title : 'ZeroTwo', body : 'Bot By Toshiro', thumbnail : buffer }} }
+📒 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`, contextInfo : {externalAdReply : {title : 'ZeroTwo', body : 'Bot By Toshiro', thumbnail : https://telegra.ph/file/c468d11386f50b9028d83.jpg }} }
         )
     }
 }
