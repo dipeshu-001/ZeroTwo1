@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
             mimetype: Mimetype.gif,
             caption: `
 
-❤️(> ਊ <)❤️ Kon'nichiwa watashi wa *${M.sender.username}* ZeroTwodesu!
+❤️(> ਊ <)❤️ Kon'nichiwa watashi wa *${M.sender.username}* I'm ZeroTwo-desu!
 
 🔰 ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ɪꜱꜱᴜᴇꜱ ᴡɪᴛʜ ᴛʜᴇ ʙᴏᴛ ᴏʀ ᴀɴʏ ᴇʀʀᴏʀ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ʙᴏᴛ ᴏᴡɴᴇʀ. ᴛʏᴘᴇ " ${this.client.config.prefix}ᴏᴡɴᴇʀ " ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ!
 
@@ -93,9 +93,9 @@ export default class Command extends BaseCommand {
 ───────────────
 🎐-𝐙 𝐞 𝐫 𝐨 𝐓 𝐰 𝐨-🎐
 ┌────────────┈❀
-│   ゼロツー❤️
+│  ゼロツー❤️
 └────────────┈❀
-📒 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
+📒 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`, contextInfo : {externalAdReply : {title : 'ZeroTwo', body : 'Bot By Toshiro', thumbnail : buffer }} }
         )
     }
 }
