@@ -90,42 +90,6 @@ export default class Command extends BaseCommand {
 🧧 Description: This Command will Redirect To Nsfw Menu!
 🎐 Usage: ${this.client.config.prefix}h9
 
-━━━━❰🧣𝐏𝐨𝐤𝐞𝐦𝐨𝐧🧣❱━━━━
-
-🍁 aliases: h10
-🧧 Description: This Command will Redirect To Pokemon Menu!
-🎐 Usage: ${this.client.config.prefix}h10
-
-━━━━❰🧣𝐔𝐭𝐢𝐥𝐬🧣❱━━━━
-
-🍁 aliases: h11
-🧧 Description: This Command Will Redirect To Utils Menu!
-🎐 Usage: ${this.client.config.prefix}h11
-
-━━━━❰🧣𝐖𝐞𝐞𝐛🧣❱━━━━
-
-🍁 aliases: h12
-🧧 Description: This Command Will Redirect To Weeb Menu!
-🎐 Usage: ${this.client.config.prefix}h12
-
-━━━━❰🧣𝐌𝐮𝐬𝐢𝐜🧣❱━━━━
-
-🍁 aliases: h13
-🧧 Description: This Command will Redirect To Music Menu!
-🎐 Usage: ${this.client.config.prefix}h13
-
-━━━━❰🧣𝐌𝐞𝐝𝐢𝐚🧣❱━━━━
-
-🍁 aliases: h14
-🧧 Description: This Command will Redirect To Media Menu! 
-🎐 Usage: ${this.client.config.prefix}h14
-
-━━━━❰🧣𝐘𝐨𝐮𝐓𝐮𝐛𝐞🧣❱━━━━
-
-🍁 aliases: h15
-🧧 Description: This Command Will Redirect To YouTube Menu! 
-🎐 Usage: ${this.client.config.prefix}h15
-
 ───────────────
 🎐-𝐙 𝐞 𝐫 𝐨 𝐓 𝐰 𝐨-🎐
 ┌────────────┈❀
