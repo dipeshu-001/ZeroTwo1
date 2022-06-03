@@ -146,7 +146,7 @@ export default class MessageHandler {
       return void null;
     if (!command)
       return void M.reply(
-        `No such command, use *${this.client.config.prefix}help* to view the command list.`
+        `Baka!!, The Bot will response to the specific command which is listed in bot Database type *${this.client.config.prefix}help* to view the command list.`
       );
     const user = await this.client.getUser(M.sender.jid);
     if (user.ban) return void M.reply("You're Banned from using commands.");
