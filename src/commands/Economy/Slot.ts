@@ -21,7 +21,7 @@ export default class Command extends BaseCommand {
     M: ISimplifiedMessage,
     { joined }: IParsedArgs
   ): Promise<void> => {
-    if (M.from !== "120363025090167429@g.us")
+    if (M.from !== "120363023021814163@g.us")
       return void M.reply(
         `You can't bet here. Use ${this.client.config.prefix}support to get casino group link.`
       );
@@ -31,7 +31,7 @@ export default class Command extends BaseCommand {
     if (time - (Date.now() - cd) > 0) {
       const timeLeft = ms(time - (Date.now() - cd));
       return void M.reply(
-        `Woahh! Slow down. You can bet again in *${timeLeft.seconds} second(s)*`
+        `Woahh! Slow down. You can bet again in *${timeLeft.seconds} 🕐 second(s)*`
       );
     }
     const emojis = [
