@@ -29,7 +29,7 @@ export default class Command extends BaseCommand {
       return void M.reply(`You don't have any pokemon in your party.`);
     let text = `*🪄 ${username}'s Party*\n\n`;
     for (let i = 0; i < data.length; i++) {
-      text += `*#${i + 1} 🧧 Name: ${this.client.util.capitalize(
+      text += `*❄️${i + 1} 🎫 Name: ${this.client.util.capitalize(
         data[i].name
       )}*\n\t\t📱 *Pokedex Id: ${data[i].id}*\n\t\t💠 *Level: ${
         data[i].level
