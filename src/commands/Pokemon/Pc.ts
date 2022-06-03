@@ -27,9 +27,9 @@ export default class Command extends BaseCommand {
     }
     if (data.length < 1)
       return void M.reply(`You don't have any pokemon in your pc.`);
-    let text = `*💻 ${username}'s PC*\n\n`;
+    let text = `*🎫 ${username}'s PC*\n\n`;
     for (let i = 0; i < data.length; i++) {
-      text += `*#${i + 1} ${this.client.util.capitalize(data[i].name)}*\n`;
+      text += `*🎐${i + 1} ${this.client.util.capitalize(data[i].name)}*\n`;
     }
     const buttons = [
       {
