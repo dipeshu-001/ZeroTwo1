@@ -28,7 +28,7 @@ export default class Command extends BaseCommand {
 
 ❤️(> W <)❤️ Kon'nichiwa watashi wa *${M.sender.username}* I'm  ZeroTwodesu!
 
-🔰 ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ɪꜱꜱᴜᴇꜱ ᴡɪᴛʜ ᴛʜᴇ ʙᴏᴛ ᴏʀ ᴀɴʏ ᴇʀʀᴏʀ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ʙᴏᴛ ᴏᴡɴᴇʀ. ᴛʏᴘᴇ " ${this.client.config.prefix}ᴏᴡɴᴇʀ " ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ!
+🎐 ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ɪꜱꜱᴜᴇꜱ ᴡɪᴛʜ ᴛʜᴇ ʙᴏᴛ ᴏʀ ᴀɴʏ ᴇʀʀᴏʀ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ʙᴏᴛ ᴏᴡɴᴇʀ. ᴛʏᴘᴇ " ${this.client.config.prefix}ᴏᴡɴᴇʀ " ᴛᴏ ᴄᴏɴᴛᴀᴄᴛ ᴏᴡɴᴇʀ!
 
  ᴘʀᴇꜰɪx: ${this.client.config.prefix}
  ᴅᴇᴠʟᴏᴘᴇʀ: Toshiro
@@ -37,102 +37,23 @@ export default class Command extends BaseCommand {
 〘 𝑪𝑶𝑴𝑴𝑨𝑵𝑫 𝑳𝑰𝑺𝑻 〙
 
 ────────────────
-━━❰ 𝐂𝐡𝐚𝐫𝐚𝐜𝐭𝐞𝐫𝐬 ❱━━
 
-🍁 aliases: h1
-💠 Description: This Command will Redirect To Character Menu!
-🎐 Usage: ${this.client.config.prefix}h1
-
-━━❰ 𝐂𝐨𝐝𝐢𝐧𝐠 ❱━━
-
-🍁 aliases: h2
-💠 Description: This Command will Redirect To Coding Menu!
-🎐 Usage: ${this.client.config.prefix}h2
-
-━━❰ 𝐃𝐞𝐯 ❱━━
-
-🍁 aliases: h3
-💠 Description: This Command will Redirect To Dev Menu!
-🎐 Usage: ${this.client.config.prefix}h3
-
-━━❰ 𝐄𝐜𝐨𝐧𝐨𝐦𝐲 ❱━━
-
-🍁 aliases: h4
-💠 Description: This Command will Redirect To Economy Menu!
-🎐 Usage: ${this.client.config.prefix}h4
-
-━━❰ 𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐯𝐞 ❱━━
-
-🍁 aliases: h5
-💠 Description: Thia Command will Redirect To Educative Menu!
-🎐 Usage: ${this.client.config.prefix}h5
-
-━━❰ 𝐅𝐮𝐧 ❱━━
-
-🍁 aliases: h6
-💠 Description: This Command will Redirect To Fun Menu!
-🎐 Usage: ${this.client.config.prefix}h6
-
-━━❰ 𝐆𝐚𝐦𝐞𝐬 ❱━━
-
-🍁 aliases: h7
-💠 Description: This Command will Redirect To Games Menu!
-🎐 Usage:  ${this.client.config.prefix}h7
-
-━━❰ 𝐌𝐨𝐝𝐫𝐚𝐭𝐢𝐨𝐧 ❱━━
-
-🍁 aliases: h8
-💠 Description: This Command Will Redirect To Moderation Menu! 
-🎐 Usage: ${this.client.config.prefix}h8
-
-━━❰ 𝐍𝐬𝐟𝐰 ❱━━
-
-🍁 aliases: h9
-💠 Description: This Command will Redirect To Nsfw Menu!
-🎐 Usage: ${this.client.config.prefix}h9
-
-━━❰ 𝐏𝐨𝐤𝐞𝐦𝐨𝐧 ❱━━
-
-🍁 aliases: h10
-💠 Description: This Command will Redirect To Pokemon Menu!
-🎐 Usage: ${this.client.config.prefix}h10
-
-━━❰ 𝐖𝐞𝐞𝐛 ❱━━
-
-🍁 aliases: h11
-💠 Description: This Command will Redirect To weeb Menu!
-🎐Usage: ${this.client.config.prefix}h11
-
-━━❰ 𝐌𝐮𝐬𝐢𝐜 ❱━━
-
-🍁 aliases: h12
-💠 Description: This Command will Redirect To Music Menu!
-🎐Usage: ${this.client.config.prefix}h12
-
-━━❰ 𝐔𝐭𝐢𝐥𝐬 ❱━━
-
-🍁 aliases: h13
-💠 Description: This Command will Redirect To utils Menu!
-🎐 Usage: ${this.client.config.prefix}h13
-
-━━❰ 𝐌𝐞𝐝𝐢𝐚 ❱━━
-
-🍁 aliases: h14
-💠 Description: This Command will Redirect To media Menu!
-🎐 Usage: ${this.client.config.prefix}h14
-
-━━❰ 𝐘𝐨𝐮𝐭𝐮𝐛𝐞 ❱━━
-
-🍁 aliases: h15
-💠 Description: This Command will Redirect To YouTube Menu!
-🎐 Usage: ${this.client.config.prefix}h15
+🧧 ${this.client.config.prefix}h1 🧧
+🧧 ${this.client.config.prefix}h2 🧧
+🧧 ${this.client.config.prefix}h3 🧧
+🧧 ${this.client.config.prefix}h4 🧧
+🧧 ${this.client.config.prefix}h5 🧧
+🧧 ${this.client.config.prefix}h6 🧧
+🧧 ${this.client.config.prefix}h7 🧧
+🧧 ${this.client.config.prefix}h8 🧧
+🧧 ${this.client.config.prefix}h9 🧧
 
 ───────────────
 🎐-𝐙 𝐞 𝐫 𝐨 𝐓 𝐰 𝐨-🎐
 ┌────────────┈❀
 │   ゼロツー❤️
 └────────────┈❀
-📒 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
+🎉 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
         )
     }
 }
