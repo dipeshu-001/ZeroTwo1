@@ -54,7 +54,6 @@ export default class Command extends BaseCommand {
 │   ゼロツー❤️
 └────────────┈❀
 🚀 *USER Exp*: *${(await this.client.getUser(user)).Xp || 0}*  ` }
-
         )
     }
 }
