@@ -28,7 +28,7 @@ export default class WAClient extends Base {
   assets = new Map<string, Buffer>();
   constructor(public config: IConfig) {
     super();
-    this.browserDescription[0] = "Chitoge";
+    this.browserDescription[0] = "ZeroTwo";
     this.version = [3, 3234, 9];
     this.logger.level = "fatal";
 
@@ -405,7 +405,7 @@ export default class WAClient extends Base {
     ];
     const buttonMessage: any = {
       contentText: `*A claimable character Appeared!*\n\n🎀 *Name: ${chara.name}*\n\n💬 *About:* ${chara.about}\n\n📛 *Source: ${source[0].anime.title}*\n\n💰 *Price: ${price}*\n\n*[Use ${this.config.prefix}claim to have this character in your gallery]*`,
-      footerText: "✞︎☠︎︎ Elaina ✞︎☠︎︎",
+      footerText: "ZeroTwo",
       buttons: buttons,
       headerType: 4,
       imageMessage: media?.message?.imageMessage,
