@@ -53,9 +53,8 @@ export default class Command extends BaseCommand {
 ┌────────────┈❀
 │   ゼロツー❤️
 └────────────┈❀
-🐇 *USER Exp*: *${(await this.client.getUser(user)).Xp || 0}*  ` }
+🚀 *USER Exp*: *${(await this.client.getUser(user)).Xp || 0}*  ` }
 
-🎉 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
         )
     }
 }
