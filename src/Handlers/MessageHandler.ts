@@ -149,7 +149,7 @@ export default class MessageHandler {
         `Baka!!, The Bot will response to the specific command which is listed in bot Database type *${this.client.config.prefix}help* to view the command list.`
       );
     const user = await this.client.getUser(M.sender.jid);
-    if (user.ban) return void M.reply("You're Banned from using commands.");
+    if (user.ban) return void M.reply("You're Banned from using Unlisted commands Contact owner To Unban you.");
     const state = await this.client.DB.disabledcommands.findOne({
       command: command.config.command,
     });
