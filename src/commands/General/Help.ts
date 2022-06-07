@@ -38,15 +38,15 @@ export default class Command extends BaseCommand {
 
 ────────────────
 
-🧧 ${this.client.config.prefix}h1 🧧
-🧧 ${this.client.config.prefix}h2 🧧
-🧧 ${this.client.config.prefix}h3 🧧
-🧧 ${this.client.config.prefix}h4 🧧
-🧧 ${this.client.config.prefix}h5 🧧
-🧧 ${this.client.config.prefix}h6 🧧
-🧧 ${this.client.config.prefix}h7 🧧
-🧧 ${this.client.config.prefix}h8 🧧
-🧧 ${this.client.config.prefix}h9 🧧
+🧧${this.client.config.prefix}h1🧧
+🧧${this.client.config.prefix}h2🧧
+🧧${this.client.config.prefix}h3🧧
+🧧${this.client.config.prefix}h4🧧
+🧧${this.client.config.prefix}h5🧧
+🧧${this.client.config.prefix}h6🧧
+🧧${this.client.config.prefix}h7🧧
+🧧${this.client.config.prefix}h8🧧
+🧧${this.client.config.prefix}h9🧧
 
 ───────────────
 🎐-𝐙 𝐞 𝐫 𝐨 𝐓 𝐰 𝐨-🎐
