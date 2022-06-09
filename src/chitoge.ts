@@ -15,8 +15,8 @@ import NewsHandler from "./Handlers/NewsHandler";
 
 if (!process.env.MONGO_URI) throw new Error("MONGO URL IS NOT PROVIDED");
 const client = new WAClient({
-  name: process.env.NAME || "ZeroTwo1",
-  session: process.env.SESSION || "ZeroTwo1",
+  name: process.env.NAME || "ZeroTwo",
+  session: process.env.SESSION || "ZeroTwo",
   prefix: process.env.PREFIX || ":",
   mods: (process.env.MODS || "")
     .split(", ")
